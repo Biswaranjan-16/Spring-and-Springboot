@@ -1,10 +1,15 @@
 package in.Biswa;
 
-public class Car extends Engine {
+public class Car  {
+	private IEngine eng;
+	
+	public Car(IEngine eng) {
+		this.eng=eng;
+	}
 	
 public void drive() {
 	
-	int status=super.start();
+	int status=eng.start();
 	
 	if(status >= 1) {
 		
