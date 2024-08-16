@@ -2683,3 +2683,9 @@ END
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-16 20:14:06.901
 !MESSAGE Classpath changed for project: New
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-16 20:20:52.930
+!MESSAGE Classpath changed for project: New
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-16 20:21:02.575
+!MESSAGE Classpath changed for project: New
