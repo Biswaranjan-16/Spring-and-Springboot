@@ -2671,3 +2671,9 @@ END
 !MESSAGE Save operation warnings.
 !SUBENTRY 1 org.eclipse.core.resources 2 234 2024-08-16 19:51:29.492
 !MESSAGE The project description file (.project) for 'cccc' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-16 20:06:10.400
+!MESSAGE Classpath changed for project: cccc
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-16 20:06:20.502
+!MESSAGE Classpath changed for project: New
