@@ -1,5 +1,0 @@
-package in.Biswa;
-
-public interface IEngine {
-
-}

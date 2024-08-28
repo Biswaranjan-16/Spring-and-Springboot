@@ -29,6 +29,9 @@
 		<item value="org.eclipse.tm.terminal.view.feature:11.6.0.202403071917"/>
 		<item value="org.eclipse.userstorage:1.2.0.v20210517-0327"/>
 		<item value="org.eclipse.wst.common.fproj:3.7.4.v202308161955"/>
+		<item value="org.eclipse.wst.xml.xpath2.processor.feature:2.1.0.v202307260822"/>
+		<item value="org.eclipse.wst.xml_ui.feature:3.34.0.v202404170147"/>
+		<item value="org.eclipse.wst.xsl.feature:1.3.1600.v202405130119"/>
 		<item value="org.jboss.tools.m2e.wro4j.feature:1.2.1.202301111328"/>
 		<item value="org.sonatype.m2e.egit.feature:0.17.0.202209271423"/>
 	</list>
@@ -39,6 +42,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\biswa\Documents\workspace-spring-tool-suite-4-4.24.0.RELEASE"/>
 			<item value="E:\Spring-and-Springboot"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">

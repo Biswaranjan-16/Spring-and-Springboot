@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="PaymentService"/>
+    <fullyQualifiedTypeName name="in.biswa.beans.CreditCardPayment"/>
+    <fullyQualifiedTypeName name="in.biswa.beans.DebitCardPayment"/>
 </qualifiedTypeNameHistroy>

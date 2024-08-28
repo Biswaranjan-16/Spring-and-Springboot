@@ -1,11 +1,11 @@
 
 public class App {
 public static void main(String[] args) {
-	 IPayment p1=new DebitCardPayment();
+	 IPayment p1=new CreditCardPayment();
 	 
 	 IPayment p2=new DebitCardPayment();
 	 
-	 //constructor injrction
+	 //constructor injection
 	PaymentService ps=new PaymentService(p1);
 	
 	 //setter injection
