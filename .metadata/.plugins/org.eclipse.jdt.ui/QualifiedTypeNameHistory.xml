@@ -3,4 +3,7 @@
     <fullyQualifiedTypeName name="PaymentService"/>
     <fullyQualifiedTypeName name="in.biswa.beans.CreditCardPayment"/>
     <fullyQualifiedTypeName name="in.biswa.beans.DebitCardPayment"/>
+    <fullyQualifiedTypeName name="in.biswa.Engine"/>
+    <fullyQualifiedTypeName name="in.biswa.Bus"/>
+    <fullyQualifiedTypeName name="in.biswa.PetrolEngine"/>
 </qualifiedTypeNameHistroy>
