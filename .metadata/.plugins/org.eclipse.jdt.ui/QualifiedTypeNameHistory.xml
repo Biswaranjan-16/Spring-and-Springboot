@@ -6,4 +6,6 @@
     <fullyQualifiedTypeName name="in.biswa.Engine"/>
     <fullyQualifiedTypeName name="in.biswa.Bus"/>
     <fullyQualifiedTypeName name="in.biswa.PetrolEngine"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 </qualifiedTypeNameHistroy>
