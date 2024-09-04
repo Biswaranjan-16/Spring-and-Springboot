@@ -8,4 +8,12 @@
     <fullyQualifiedTypeName name="in.biswa.PetrolEngine"/>
     <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
     <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="in.biswa.DAO.IUserDao"/>
+    <fullyQualifiedTypeName name="in.biswa.Service.EmailService"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="in.biswa.Service.PwdService"/>
+    <fullyQualifiedTypeName name="in.biswa.Service.UserService"/>
+    <fullyQualifiedTypeName name="in.biswa.SpringAutowireApplication"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 </qualifiedTypeNameHistroy>
