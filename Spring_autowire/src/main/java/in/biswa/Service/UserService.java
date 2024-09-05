@@ -9,8 +9,10 @@ import in.biswa.DAO.IUserDao;
 public class UserService {
 	@Autowired
 	private PwdService pwdService;
+	
 	@Autowired
 	private IUserDao userDao;
+	
 	@Autowired
 	private EmailService emailService;
 
