@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Test {
 
 	public static void main(String[] args) {
-		ApplicationContext context=new ClassPathXmlApplicationContext("Spring-bean.xml");
+		ApplicationContext ctxt=new ClassPathXmlApplicationContext("Spring-bean.xml");
 
 	}
 

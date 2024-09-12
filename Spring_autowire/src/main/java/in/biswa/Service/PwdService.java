@@ -4,12 +4,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class PwdService {
-public String encryptPwd(String pwd) {
-	
-	//logic
-	
-	System.out.println("password encrypted... ");
-	return pwd;
-	
-}
+	public String encryptPwd(String pwd) {
+
+		// logic
+
+		System.out.println("password encrypted... ");
+		return pwd;
+
+	}
 }
