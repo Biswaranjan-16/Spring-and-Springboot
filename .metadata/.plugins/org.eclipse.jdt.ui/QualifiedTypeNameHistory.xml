@@ -11,9 +11,13 @@
     <fullyQualifiedTypeName name="in.biswa.DAO.IUserDao"/>
     <fullyQualifiedTypeName name="in.biswa.Service.EmailService"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
     <fullyQualifiedTypeName name="in.biswa.Service.PwdService"/>
     <fullyQualifiedTypeName name="in.biswa.Service.UserService"/>
     <fullyQualifiedTypeName name="in.biswa.SpringAutowireApplication"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.ApplicationRunner"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.CommandLineRunner"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.InitializingBean"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.DisposableBean"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
 </qualifiedTypeNameHistroy>

@@ -8464,3 +8464,49 @@ org.eclipse.core.runtime.CoreException: Launch configuration Attacher references
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 !SUBENTRY 1 org.eclipse.jdt.launching 4 124 2024-09-13 11:17:30.815
 !MESSAGE Launch configuration Attacher references closed project Springboot_1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-13 21:49:02.075
+!MESSAGE Classpath changed for project: Spring_Data_Jpa
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-13 21:49:02.075
+!MESSAGE Boot project ADDED: Spring_Data_Jpa
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-13 21:49:03.997
+!MESSAGE Classpath changed for project: Spring_Bean_lifecycle
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-13 21:49:03.998
+!MESSAGE Boot project REMOVED: Spring_Bean_lifecycle
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-13 21:49:08.909
+!MESSAGE Classpath changed for project: Spring_Data_Jpa
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-13 21:49:34.338
+!MESSAGE Classpath changed for project: Spring_Data_Jpa
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-13 21:49:34.338
+!MESSAGE Boot project REMOVED: Spring_Data_Jpa
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-09-13 21:49:34.352
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): Spring_Data_Jpa does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2603)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2353)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2396)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:439)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2024-09-13 21:49:34.352
+!MESSAGE Spring_Data_Jpa does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-13 21:50:02.511
+!MESSAGE Classpath changed for project: Spring_Data_Jpa
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-13 21:50:02.512
+!MESSAGE Boot project ADDED: Spring_Data_Jpa
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-13 21:50:03.025
+!MESSAGE Classpath changed for project: Spring_Data_Jpa
