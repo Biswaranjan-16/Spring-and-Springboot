@@ -39,7 +39,7 @@ public class SpringDataCrudJpaApplication {
 		
 		//List<Employee> empRecord = emprepo.getEmpRecord("tiku", "teacher");
 		//empRecord.forEach(System.out::println);
-		emprepo.insertEmpRecord(100, "pinkun", "teacher", "male", 45000.00);
+		emprepo.insertEmpRecord(100, "pinkun", "developer", "male", 45000.00);
 	}
 
 }
