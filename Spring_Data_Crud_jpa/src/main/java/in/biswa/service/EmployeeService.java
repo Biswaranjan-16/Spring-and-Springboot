@@ -17,12 +17,12 @@ public class EmployeeService {
 	public EmployeeService(EmployeeRepo empRepo) {
 		this.empRepo = empRepo;
 	}
-	
+
 	public void getEmpById(Integer Id) {
 		Employee empById = empRepo.getEmpById(Id);
 		System.out.println(empById);
 	}
-	
+
 	public void getAllEmpRecord() {
 		List<Employee> allEmpRecord = empRepo.getAllEmpRecord();
 		allEmpRecord.forEach(System.out::println);
