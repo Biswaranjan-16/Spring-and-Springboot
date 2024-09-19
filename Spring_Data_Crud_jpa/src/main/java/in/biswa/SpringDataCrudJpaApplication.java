@@ -31,15 +31,42 @@ public class SpringDataCrudJpaApplication {
 		 //bean.getEmpSalaryGreaterThanEqual(40000.00);
 		//bean.getAllEmpRecord();
 		//bean.getEmpById(102);
+		//bean.getEmpWithSort();
+		bean.getEmpWithSortDesc();
 		
-		
-		EmployeeRepo emprepo=context.getBean(EmployeeRepo.class);
+		//EmployeeRepo emprepo=context.getBean(EmployeeRepo.class);
 		
 		//emprepo.deleteEmp(102);
 		
 		//List<Employee> empRecord = emprepo.getEmpRecord("tiku", "teacher");
 		//empRecord.forEach(System.out::println);
-		emprepo.insertEmpRecord(100, "pinkun", "developer", "male", 45000.00);
+		//emprepo.insertEmpRecord(100, "pinkun", "developer", "male", 45000.00);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }

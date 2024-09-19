@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +14,17 @@ import in.biswa.repo.EmployeeRepo;
 @Service
 public class EmployeeService {
 	private EmployeeRepo empRepo;
+	
+	public void getEmpWithSortDesc() {
+		Sort descending = Sort.by("empSalary").descending();
+	     List<Employee> desc = empRepo.findAll(descending);
+	     desc.forEach(System.out::println);
+	}
+		public void getEmpWithSort(){
+		Sort sort = Sort.by("empSalary").ascending();
+		List<Employee> all = empRepo.findAll(sort);
+		all.forEach(System.out::println);
+	}
 
 	public EmployeeService(EmployeeRepo empRepo) {
 		this.empRepo = empRepo;
