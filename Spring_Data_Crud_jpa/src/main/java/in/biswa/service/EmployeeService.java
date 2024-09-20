@@ -4,6 +4,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
@@ -15,12 +18,45 @@ import in.biswa.repo.EmployeeRepo;
 public class EmployeeService {
 	private EmployeeRepo empRepo;
 	
+	public void getEmpByQBE() {
+		Employee employee=new Employee();
+	    employee.setEmpDept("IAF");
+	    Example<Employee> of = Example.of(employee);
+	    List<Employee> findall = empRepo.findAll(of);
+	    findall.forEach(e -> System.out.println(e));
+	}
+	
+	public void empPagination(int pageNo,int pageSize) {
+		PageRequest of = PageRequest.of(pageNo-1, pageSize);
+	Page<Employee> all = empRepo.findAll(of);
+		List<Employee> content = all.getContent();
+		content.forEach(System.out::println);
+	}
+	
+	public void saveEmp() {
+		Employee emp=new Employee();
+		emp.setEmpGender("male");
+		emp.setEmpName("ajay");
+		emp.setEmpDept("IAF");
+		emp.setEmpid(101);
+		emp.setEmpSalary(54000);
+		
+		empRepo.save(emp);
+	}
+	
+	public void getEmpWithColumn(String column) {
+		Sort descending = Sort.by(column).descending();
+		List<Employee> all = empRepo.findAll(descending);
+		all.forEach(System.out::println);
+	}
+
 	public void getEmpWithSortDesc() {
 		Sort descending = Sort.by("empSalary").descending();
-	     List<Employee> desc = empRepo.findAll(descending);
-	     desc.forEach(System.out::println);
+		List<Employee> desc = empRepo.findAll(descending);
+		desc.forEach(System.out::println);
 	}
-		public void getEmpWithSort(){
+
+	public void getEmpWithSort() {
 		Sort sort = Sort.by("empSalary").ascending();
 		List<Employee> all = empRepo.findAll(sort);
 		all.forEach(System.out::println);

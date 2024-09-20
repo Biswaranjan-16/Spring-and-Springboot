@@ -17,7 +17,7 @@ public class SpringDataCrudJpaApplication {
 		ConfigurableApplicationContext context = SpringApplication.run(SpringDataCrudJpaApplication.class, args);
 
 		EmployeeService bean = context.getBean(EmployeeService.class);
-
+		//bean.saveEmp();
 //		 bean.saveEmployee();
 //		 bean.saveMultipleEmployees();
 //		 bean.getEmp();
@@ -28,45 +28,26 @@ public class SpringDataCrudJpaApplication {
 //		 bean.getEmpDept("nurse");
 //		 bean.getEmpGender("female");
 //		 bean.getEmpGenderAndEmpDept("male", "teacher");
-		 //bean.getEmpSalaryGreaterThanEqual(40000.00);
-		//bean.getAllEmpRecord();
-		//bean.getEmpById(102);
-		//bean.getEmpWithSort();
-		bean.getEmpWithSortDesc();
-		
-		//EmployeeRepo emprepo=context.getBean(EmployeeRepo.class);
-		
-		//emprepo.deleteEmp(102);
-		
-		//List<Employee> empRecord = emprepo.getEmpRecord("tiku", "teacher");
-		//empRecord.forEach(System.out::println);
-		//emprepo.insertEmpRecord(100, "pinkun", "developer", "male", 45000.00);
+		// bean.getEmpSalaryGreaterThanEqual(40000.00);
+		// bean.getAllEmpRecord();
+		// bean.getEmpById(102);
+		// bean.getEmpWithSort();
+		// bean.getEmpWithSortDesc();
+		// bean.getEmpWithColumn("empSalary");
+		//bean.empPagination(1, 2);
+		bean.getEmpByQBE();
+
 		
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		// EmployeeRepo emprepo=context.getBean(EmployeeRepo.class);
+		// emprepo.deleteEmp(102);
+
+		// List<Employee> empRecord = emprepo.getEmpRecord("tiku", "teacher");
+		// empRecord.forEach(System.out::println);
+		// emprepo.insertEmpRecord(100, "pinkun", "developer", "male", 45000.00);
+
 	}
 
 }
