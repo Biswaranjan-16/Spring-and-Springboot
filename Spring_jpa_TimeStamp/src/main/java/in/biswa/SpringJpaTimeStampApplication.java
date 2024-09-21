@@ -2,12 +2,14 @@ package in.biswa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class SpringJpaTimeStampApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringJpaTimeStampApplication.class, args);
+		ConfigurableApplicationContext context = 
+				SpringApplication.run(SpringJpaTimeStampApplication.class, args);
 	}
 
 }
