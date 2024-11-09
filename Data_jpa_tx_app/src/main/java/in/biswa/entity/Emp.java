@@ -40,9 +40,4 @@ public class Emp {
 		this.esal = esal;
 	}
 
-	@Override
-	public String toString() {
-		return "Emp [eid=" + eid + ", ename=" + ename + ", esal=" + esal + "]";
-	}
-
 }
