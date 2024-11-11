@@ -7,9 +7,9 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class Welcomeconntroller {
 
-	public Welcomeconntroller() {
-		System.out.println("welcome controller : constructor");
-	}
+//	public Welcomeconntroller() {
+//		System.out.println("welcome controller : constructor");
+//	}
 	@GetMapping("/welcome")
 	public ModelAndView getWelComeMsg() {
 		ModelAndView mav = new ModelAndView();
