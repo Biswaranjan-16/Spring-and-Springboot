@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import in.biswa.entity.Book;
@@ -43,10 +44,29 @@ public class BookController {
 	public ModelAndView getBooks() {
 		ModelAndView mav = new ModelAndView();
 		List<Book> allBooks = service.getAllBooks();
-
 		mav.addObject("books", allBooks);
 		mav.setViewName("BookView");
 		return mav;
 
+	}
+	
+	@GetMapping("/delete")
+	public ModelAndView deleteBook(@RequestParam("bookId") Integer bookId) {
+		service.deleteBook(bookId);
+		ModelAndView mav = new ModelAndView();
+		List<Book> allBooks = service.getAllBooks();
+		mav.addObject("books", allBooks);
+		mav.setViewName("BookView");
+		return mav;
+	}
+	
+	@GetMapping("/edit")
+	public ModelAndView editBook(@RequestParam("bookId") Integer bookId) {		
+		Book bookObj=service.getBookById(bookId);
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("book",bookObj);
+		mav.setViewName("bookform");
+		return mav;
+		
 	}
 }

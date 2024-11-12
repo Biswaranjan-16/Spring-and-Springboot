@@ -13,22 +13,25 @@
 <body>
 	<h1>Book Form</h1>
 
-
+  	<p th:text="${succMsg}" style="color:green;"></p>
+  	<p th:text="${errMsg}"></p>
 	<form th:action="@{/book}" th:object="${book}" method="post">
 		<table>
 			<tr>
 				<td>Book Name :</td>
-				<td> <input type="text" th:field="*{bookName}"/></td>
-				
-				
+				<td> <input type="text" th:field="*{bookName}" required/></td>
+				<input type="hidden" th:field="*{bookId}"/>
+				</tr>
+				<tr>
 				<td>Book Price :</td>
-				<td> <input type="number" th:field="*{price}"/></td>
-				
-				
+				<td> <input type="number" th:field="*{price}" required/></td>
+				</tr>
+				<tr>
 				<td></td>
-				<td> <input type="submit" value="save"/></td>
+				<td > <input type="submit" value="save" class="btn btn-primary"/></td>
 			</tr>
 		</table>
+		<a href="books">view all books</a>
 	</form>
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

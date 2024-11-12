@@ -13,6 +13,7 @@ public class Book {
 	private int bookId;
 	private String bookName;
 	private Double price;
+	private String activeSw;
 	
 	
 	public int getBookId() {
@@ -33,11 +34,19 @@ public class Book {
 	public void setPrice(Double price) {
 		this.price = price;
 	}
-	
+	public String getActiveSw() {
+		return activeSw;
+	}
+	public void setActiveSw(String activeSw) {
+		this.activeSw = activeSw;
+	}
 	@Override
 	public String toString() {
-		return "Book [bookId=" + bookId + ", bookName=" + bookName + ", price=" + price + "]";
+		return "Book [bookId=" + bookId + ", bookName=" + bookName + ", price=" + price + ", activeSw=" + activeSw
+				+ "]";
 	}
+	
+	
 	
 	
 	
