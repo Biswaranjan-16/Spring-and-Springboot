@@ -17,11 +17,9 @@ public class BookServiceImpl implements BookService {
 
 
 	@Override
-	public List<Book> getAllBooks() {
-		
+	public List<Book> getAllBooks() {	
 		return bookrepo.findByActiveSw("Y");
 	}
-
 
 	@Override
 	public Boolean saveBook(Book book) {
@@ -32,21 +30,18 @@ public class BookServiceImpl implements BookService {
 		}
 		return false;
 	}
+	
 	@Override
-	public void deleteBook(Integer bookId) {
-		
-		
+	public void deleteBook(Integer bookId) {	
 		//hard delete
 		//bookrepo.deleteById(bookId);
-		
-		
+				
 		//soft delete
 		Optional<Book> findById=bookrepo.findById(bookId);
 		if(findById.isPresent()) {
 			Book book=findById.get();
 			book.setActiveSw("N");
-			bookrepo.save(book);
-			
+			bookrepo.save(book);			
 		}
 		
 	}
